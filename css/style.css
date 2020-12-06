@@ -59,7 +59,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px rgba(25, 104, 194, 0.849) inset !important;
+  box-shadow: 0 0 0 30px rgba(25, 104, 194, 0.849) inset !important;
   -webkit-text-fill-color: #b1a794 !important;
 }
 
