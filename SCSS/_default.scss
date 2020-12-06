@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@import "colours";
+
+a {
+color: $link-colour;
+border-bottom: 1px solid $font-colour;
+
+    &:hover {
+        color: black;
+        border: none;
+    }
+}

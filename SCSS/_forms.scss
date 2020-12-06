@@ -1,0 +1,56 @@
+@import "colours";
+
+.background-image {
+    background-image: url(../images/drums-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55rem;
+}
+
+#forms {
+    padding-top: 1rem;
+
+    @media (min-width: 768px) {
+        padding-top: 10rem;
+    }
+}
+
+.form-control {
+    border: none;
+    background-color:$bg-colour;
+    color: $font-colour;
+
+    &:focus { color: $font-colour;
+        background-color: $bg-active;
+        border-color: #ffffff00 !important;
+        box-shadow: none;
+    }
+
+    &::placeholder {
+        color: $placeholder-colour;
+    }
+}
+
+  select.form-control:focus::-ms-value {
+    color: $font-colour;
+    background-color: $bg-colour !important;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px $bg-colour inset !important;
+    -webkit-text-fill-color: $font-colour !important;
+}
+
+.form-check-label {
+    background-color: $bg-active;
+    color: $font-colour;
+    margin-bottom: 0.2rem;
+}
+    
+.btn-blue {
+    background-color: $bg-colour;
+    color: $font-colour;
+}

@@ -1,7 +1,75 @@
-@charset "UTF-8";
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-¨
 html, body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #b1a794;
+  border-bottom: 1px solid #b1a794;
+}
+
+a:hover {
+  color: black;
+  border: none;
+}
+
+.background-image {
+  background-image: url(../images/drums-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55rem;
+}
+
+#forms {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  #forms {
+    padding-top: 10rem;
+  }
+}
+
+.form-control {
+  border: none;
+  background-color: rgba(25, 104, 194, 0.849);
+  color: #b1a794;
+}
+
+.form-control:focus {
+  color: #b1a794;
+  background-color: rgba(51, 117, 192, 0.849);
+  border-color: #ffffff00 !important;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #d1c6b1;
+}
+
+select.form-control:focus::-ms-value {
+  color: #b1a794;
+  background-color: rgba(25, 104, 194, 0.849) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(25, 104, 194, 0.849) inset !important;
+  -webkit-text-fill-color: #b1a794 !important;
+}
+
+.form-check-label {
+  background-color: rgba(51, 117, 192, 0.849);
+  color: #b1a794;
+  margin-bottom: 0.2rem;
+}
+
+.btn-blue {
+  background-color: rgba(25, 104, 194, 0.849);
+  color: #b1a794;
+}
